@@ -23,6 +23,10 @@ from django.conf import settings
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('',views.index),
+    path('admin/',views.admin),
+    path('user/',views.user),
+    path('create/',views.create),
+    path('loginform/',views.loginform),
 ]
 
 if settings.DEBUG:
