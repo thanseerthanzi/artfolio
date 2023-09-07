@@ -77,7 +77,7 @@ WSGI_APPLICATION = 'artfolio.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': '',
+        'NAME': 'db1',
         'USER': 'root',
         'PASSWD': '',
         'HOST': 'localhost',
