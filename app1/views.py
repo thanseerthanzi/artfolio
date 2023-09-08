@@ -2,7 +2,12 @@ from django.shortcuts import render
 
 # Create your views here.
 def index(request):
-    return render(request, 'index.html')
+    # return render(request, 'index.html')
+    # return render(request, 'admin.html')
+    # return render(request, 'user.html')
+    # return render(request, 'loginform.html')
+    return render(request, 'create.html')
+
 
 def admin1(request):
     return render(request, 'admin.html')
