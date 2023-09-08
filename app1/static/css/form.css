@@ -165,7 +165,7 @@ input[type=radio] {
   -ms-appearance: radio !important; }
 
 img {
-  max-width: 100%;
+  max-width: 80%;
   height: auto; }
 
 figure {
@@ -197,7 +197,7 @@ h2 {
 body {
   font-size: 13px;
   line-height: 1.8;
-  color: #222;
+  color: #ffffff;
   background: #f8f8f8;
   font-weight: 400;
   font-family: Poppins; }
@@ -280,6 +280,20 @@ body {
   width: 50%;
   overflow: hidden; }
 
+  .guest-image {
+    margin-top: 10px;
+    height: 208px;
+    width: 243px;
+    margin-left: -147px;
+}
+
+.guest-image1 {
+  margin-top: -205px;
+  height: 213px;
+  width: 240px;
+  margin-left: 30%;
+}
+
 .signup-image {
   margin: 0 55px; }
 
@@ -287,6 +301,14 @@ body {
   
   margin-bottom: 33px;
   
+ }
+.login-title {
+  
+  margin-bottom: -5px;
+    margin-top: -40px;
+    padding-left: 78px;
+    font-size: 21px;
+    color: white;
  }
 
 .signup-image {
@@ -313,6 +335,45 @@ figure {
   .form-submit:hover {
     background: #4292dc; }
 
+    .guest-submit {
+      display: inline-block;
+      background: #1d344b;
+      color: #fff;
+      border-bottom: none;
+      width: 141px;
+      font-size: 17px;
+      font-weight: 500;
+      padding: 15px 39px;
+      border-radius: 5px;
+      -moz-border-radius: 5px;
+      -webkit-border-radius: 5px;
+      -o-border-radius: 5px;
+      -ms-border-radius: 5px;
+      margin-top: 25px;
+      cursor: pointer; }
+      .guest-submit:hover {
+        background: #ffb727; }
+
+      .artist-submit {
+        display: inline-block;
+    background: #76c2af;
+    color: #fff;
+    border-bottom: none;
+    width: 141px;
+    font-size: 17px;
+    font-weight: 500;
+    padding: 15px 39px;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -o-border-radius: 5px;
+    -ms-border-radius: 5px;
+    margin-top: 25px;
+    cursor: pointer; }
+    .artist-submit:hover {
+      background: #4292dc; }
+
+        
 #signin {
   margin-top: 16px; }
 
@@ -340,6 +401,15 @@ figure {
   overflow: hidden; }
   .form-group:last-child {
     margin-bottom: 0px; }
+
+.guestbtn {
+  position: relative;
+  margin-bottom: 25px;
+  overflow: hidden; }
+    .guestbtn:last-child {
+      margin-bottom: 0px;
+      margin-left: 54px;
+     }
 
 input {
   width: 100%;

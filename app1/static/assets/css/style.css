@@ -11,7 +11,7 @@
 --------------------------------------------------------------*/
 body {
   font-family: "Open Sans", sans-serif;
-  color: #444444;
+  color: #fafafa;
 }
 
 a {
@@ -335,7 +335,7 @@ h6 {
 #hero .hero-container {
   position: absolute;
   bottom: 0;
-  top: 0;
+  top: -312px;
   left: 0;
   right: 0;
   display: flex;
@@ -343,6 +343,24 @@ h6 {
   align-items: center;
   flex-direction: column;
   padding: 0 15px;
+}
+
+#hero .hero-container1 {
+  position: absolute;
+    bottom: 0;
+    top: 88px;
+    left: -162px;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0px 0px;
+}
+
+.con{
+  font-size: 18px;
+  color: white;
 }
 
 #hero h1 {
