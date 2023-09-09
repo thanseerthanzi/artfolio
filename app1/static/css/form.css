@@ -232,9 +232,8 @@ body {
     -webkit-border-radius: 20px;
     -o-border-radius: 20px;
     -ms-border-radius: 20px; }
-.formpadd{
-  margin-top: 294px;
-}
+
+
 .display-flex {
   justify-content: space-between;
   -moz-justify-content: space-between;
@@ -275,7 +274,8 @@ body {
  }
 
 .signup-content {
-  padding: 35px 3px;
+  padding: 29px;
+  margin-top: 534px;
   }
 
 .signup-form, .signup-image, .signin-form, .signin-image {
