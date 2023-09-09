@@ -6,7 +6,7 @@ def index(request):
     # return render(request, 'admin.html')
     # return render(request, 'user.html')
     # return render(request, 'loginform.html')
-    return render(request, 'create.html')
+    return render(request, 'index.html')
 
 
 def admin1(request):

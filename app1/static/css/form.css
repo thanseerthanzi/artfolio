@@ -270,11 +270,13 @@ body {
   -ms-transform: translate(-50%, -50%); }
 
 .signup {
-  margin-bottom: 150px; }
+  margin-bottom: 150px;
+    padding-top: 1px;
+ }
 
 .signup-content {
   padding: 35px 3px;
-  margin-bottom: 76px; }
+  }
 
 .signup-form, .signup-image, .signin-form, .signin-image {
   width: 50%;
@@ -550,7 +552,9 @@ label.valid {
 
 .signin-content {
  
-  margin-bottom: 44px; }
+  margin-bottom: 0px;
+    margin-top: 379px;
+} 
 
 .social-login {
   align-items: center;
