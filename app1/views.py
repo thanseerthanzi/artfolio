@@ -20,3 +20,6 @@ def create(request):
 
 def loginform(request):
     return render(request, 'loginform.html')
+
+def userlogin(request):
+    return render(request, 'userlogin.html')

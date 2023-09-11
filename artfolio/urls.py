@@ -27,6 +27,7 @@ urlpatterns = [
     path('user/',views.user),
     path('create/',views.create),
     path('loginform/',views.loginform),
+    path('userlogin/',views.userlogin),
 ]
 
 if settings.DEBUG:
