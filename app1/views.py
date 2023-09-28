@@ -12,15 +12,15 @@ def index(request):
 def admin1(request):
     return render(request, 'admin.html')
 
-def user(request):
-    return render(request, 'user.html')
+def artistprofile(request):
+    return render(request, 'artist_profile.html')
 
-def create(request):
-    return render(request, 'create.html')
+def createartist(request):
+    return render(request, 'create_artist.html')
 
-def loginform(request):
-    return render(request, 'loginform.html')
+def loginartist(request):
+    return render(request, 'login_artist.html')
 
-def userlogin(request):
-    return render(request, 'userlogin.html')
+def guestlogin(request):
+    return render(request, 'guest_login.html')
 
