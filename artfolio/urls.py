@@ -28,7 +28,7 @@ urlpatterns = [
     path('create_artist/',views.createartist),
     path('login_artist/',views.loginartist),
     path('guest_login/',views.guestlogin),
-    
+
 ]
 
 if settings.DEBUG:

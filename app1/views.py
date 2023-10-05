@@ -1,4 +1,7 @@
 from django.shortcuts import render
+from django.contrib.auth.models import User
+from django.contrib.auth import authenticate
+from django.core.files.storage import FileSystemStorage
 
 # Create your views here.
 def index(request):
@@ -24,3 +27,6 @@ def loginartist(request):
 def guestlogin(request):
     return render(request, 'guest_login.html')
 
+def guestlogin(request):
+    p = guest_tbl()
+    p1 = guest()
