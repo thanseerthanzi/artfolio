@@ -22,13 +22,13 @@ from django.conf import settings
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('',views.index),
-    path('admin1/',views.admin1),
-    path('artist_profile/',views.artistprofile),
-    path('create_artist/',views.createartist),
-    path('login_artist/',views.loginartist),
-    path('guest_login/',views.guestlogin),
-
+    path('', views.index),
+    path('admin1/', views.admin1),
+    path('artist_profile/', views.artistprofile),
+    path('create_artist/', views.createartist),
+    path('login_artist/', views.loginartist),
+    path('guest_login/', views.guestlogin),
+    path('addguest/', views.addguest, name='addguest'),
 ]
 
 if settings.DEBUG:
