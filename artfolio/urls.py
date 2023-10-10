@@ -26,6 +26,8 @@ urlpatterns = [
     path('admin1/', views.admin1),
     path('artist_profile/', views.artistprofile),
     path('create_artist/', views.createartist),
+    path('create_artist1/', views.createartist1),
+
     path('login_artist/', views.loginartist),
     path('guest_login/', views.guestlogin),
     path('addguest/', views.addguest, name='addguest'),

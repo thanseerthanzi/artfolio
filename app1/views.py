@@ -29,7 +29,7 @@ def addguest(request):
     p.save()
     return render(request, 'guest_login.html')
 
-def createartist(request):
+def createartist1(request):
     p = artist_tbl()
     p1 = User()
     p.uname = request.POST.get('uname')
@@ -48,4 +48,4 @@ def createartist(request):
     password = request.POST.get('password')
     p1.set_password(password)
     p1.save()
-    return render(request, 'login_page.html')
+    return render(request, 'login_artist.html')
