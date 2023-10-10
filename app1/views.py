@@ -48,4 +48,4 @@ def createartist(request):
     password = request.POST.get('password')
     p1.set_password(password)
     p1.save()
-    return render(request, 'login_page.html')
+    return render(request, 'login_artist.html')
