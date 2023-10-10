@@ -58,7 +58,7 @@
         <li><a class="nav-link scrollto" href="#resume">Resume</a></li>
         <li><a class="nav-link scrollto" href="#services">Services</a></li>
         </li>
-        <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+        <li><a class="nav-link scrollto" href="/">Signup</a></li>
       </ul>
       <i class="bi bi-list mobile-nav-toggle"></i>
     </nav><!-- .navbar -->
@@ -79,18 +79,21 @@
           <div class="hero-container1">
             <div class="guest-image">
               <figure><img src="{% static 'images/guest.png' %}" alt="sing up image"></figure>
-              <h2 class="login-title">Login as</h2>
+            <h2 class="login-title">Login</h2>
               <div class="guestbtn form-button">
-                <input type="submit" name="signup" id="signup" class="guest-submit" value="GUEST"/>
-            </div>
+                <a href="/guest_login/" ><input type="submit" name="signup" id="signup" class="guest-submit" value="GUEST"/>
+              </a>
+              </div>
             
             </div>
             <div class="guest-image1">
               <figure><img src="{% static 'images/artpen.png' %}" alt="sing up image"></figure>
               <h2 class="login-title">Login as</h2>
               <div class="guestbtn form-button">
+                <a href="/login_artist/">
                 <input type="submit" name="signup" id="signup" class="artist-submit" value="ARTIST"/>
-            </div>
+              </a>
+              </div>
           </div>
 
           </div>
