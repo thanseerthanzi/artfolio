@@ -187,7 +187,7 @@ h2 {
 
 .main {
   background: transparent;
-  padding: 150px 0; 
+  padding: 0px 0; 
 }
 
 
@@ -204,7 +204,7 @@ body {
 
 .container {
   margin-top: 284px;
-  width: 900px;
+  width: 1066px;
   background: #fff;
   margin: 0 auto;
   box-shadow: 0px 15px 16.83px 0.17px rgba(0, 0, 0, 0.05);
@@ -269,13 +269,21 @@ body {
   -ms-transform: translate(-50%, -50%); }
 
 .signup {
-  margin-bottom: 150px;
+  margin-bottom: 414px;
     padding-top: 1px;
  }
 
+ /* create artist signup */
+
+ .signup1 {
+  margin-bottom: -330px;
+  padding-top: 0px;
+  
+}
+
 .signup-content {
   padding: 29px;
-  margin-top: 534px;
+  margin-top: 0px;
   }
 
 .signup-form, .signup-image, .signin-form, .signin-image {
@@ -390,9 +398,12 @@ figure {
   color: #222; }
 
 .signup-form {
-  margin-left: 75px;
-  margin-right: 75px;
-  padding-left: 34px; }
+  margin-left: 60px;
+  margin-right: 60px;
+  padding-left: 34px;
+  font-size: 14px;
+
+ }
 
 .register-form {
   width: 100%; }
@@ -402,7 +413,10 @@ figure {
   margin-bottom: 25px;
   overflow: hidden; }
   .form-group:last-child {
-    margin-bottom: 0px; }
+    margin-bottom: 0px;
+    margin-top: -15px;
+
+   }
 
 .guestbtn {
   position: relative;
@@ -418,7 +432,7 @@ input {
   display: block;
   border: none;
   border-bottom: 1px solid #999;
-  padding: 6px 30px;
+  padding: 0px 30px;
   font-family: Poppins;
   box-sizing: border-box; }
   input::-webkit-input-placeholder {
@@ -554,9 +568,23 @@ label.valid {
  
   margin-bottom: 0px;
     margin-top: 379px;
-    padding: 81px;
+    padding: 53px;
 
 } 
+
+.guest-content {
+ 
+  margin-bottom: 0px;
+    margin-top: 379px;
+    padding: 72px;
+
+} 
+
+.guest-form {
+  margin-right: 578px;
+  margin-left: 2px;
+  margin-bottom: 33px;
+}
 
 .social-login {
   align-items: center;
@@ -678,6 +706,8 @@ label.valid {
     margin-right: 0px;
     margin-left: 0px;
     padding: 0 30px; }
+
+
 
   .form-title {
     text-align: center; } }
