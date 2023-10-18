@@ -16,6 +16,7 @@ class artist_tbl(models.Model):
     state = models.CharField(max_length=100)
     district = models.CharField(max_length=100)
     phone = models.BigIntegerField()
+    uname = models.CharField(max_length=100)
     email = models.EmailField()
     pasword = models.CharField(max_length=100)
     class Meta:

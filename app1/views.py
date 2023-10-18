@@ -33,6 +33,7 @@ def createartist1(request):
     p = artist_tbl()
     p1 = User()
     p3=accounts()
+    
     p.fname = request.POST.get('fname')
     p.lname = request.POST.get('lname')
     p.dob = request.POST.get('dob')
@@ -40,6 +41,7 @@ def createartist1(request):
     p.state = request.POST.get('state')
     p.district = request.POST.get('district')
     p.phone = request.POST.get('phone')
+    p.uname = request.POST.get('uname')
     p.email = request.POST.get('email')
     image = request.FILES['photo']
     fs = FileSystemStorage()
@@ -47,14 +49,14 @@ def createartist1(request):
     file_url = fs.url(filename)
     p.photo = file_url
 
-   
+    p1.username =  request.POST.get('uname')
     p1.first_name = request.POST.get('fname')
     p1.last_name = request.POST.get('lname')
     p1.email = request.POST.get('email')
     password = request.POST.get('password')
     p1.set_password(password)
 
-    p3.userid=request.POST.get('userid')
+    # p3.userid=request.POST.get('userid')
     p3.status="artist" #"guest" in guest form
     p1.save()
     p.save()

@@ -85,18 +85,18 @@
                 <div class="signup-content">
                     <div class="signup-form">
                         <h2 class="form-title" >create profile</h2>
-                        <form method="POST" action="/create_artist1/" class="register-form" id="register-form">
+                        <form method="POST" enctype="multipart/form-data" action="/create_artist1/" class="register-form" id="register-form">
                            {% csrf_token %}
                             <div class="form-group">
                                 <label for="name"><i class="zmdi zmdi-account material-icons-name"></i></label>
-                                <input type="text" name="name" id="name" placeholder="first Name"/>
+                                <input type="text" name="fname" id="name" placeholder="first Name"/>
                             </div>
                             <div class="form-group">
                               <label for="name"><i class="zmdi zmdi-account material-icons-name"></i></label>
-                              <input type="text" name="name" id="name" placeholder="last Name"/>
+                              <input type="text" name="lname" id="name" placeholder="last Name"/>
                           </div>
                             <div class="form-group ">
-                              <input type="date" value="birth date" name="age" id="age" placeholder="Your age"/>
+                              <input type="date" value="birth date" name="dob" id="dob" placeholder="Your age"/>
                               <label for="age"><i class="zmdi zmdi-calendar-check"></i></label>
                               
                             </div>
@@ -126,7 +126,7 @@
                             
                             <div class="form-group ">
                                 <label for="inputState"></label>
-                                <select class="form-control" id="inputState">
+                                <select class="form-control" name="state" id="inputState">
                                                     <option value="SelectState">Select State</option>
                                                     <option value="Andra Pradesh">Andra Pradesh</option>
                                                     <option value="Arunachal Pradesh">Arunachal Pradesh</option>
@@ -169,7 +169,7 @@
                               </div>
                               <div class="form-group ">
                                 <label for="inputDistrict"></label>
-                                <select class="form-control" id="inputDistrict">
+                                <select class="form-control" name="district" id="inputDistrict">
                                     <option value="">-- select District -- </option>
                                 </select>
                             </div>
@@ -178,6 +178,10 @@
                               <label for="phone"><i class="zmdi zmdi-phone-forwarded"></i></label>
                               <input type="phone" name="phone" id="phone" placeholder="phone number"/>
                           </div>
+                          <div class="form-group">
+                            <label for="uname"><i class="zmdi zmdi-account material-icons-name"></i></label>
+                            <input type="text" name="uname" id="uname" placeholder="Enter user name"/>
+                        </div>
                             <div class="form-group">
                                 <label for="email"><i class="zmdi zmdi-email"></i></label>
                                 <input type="email" name="email" id="email" placeholder="Your Email"/>
