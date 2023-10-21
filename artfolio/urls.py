@@ -29,6 +29,11 @@ urlpatterns = [
     path('create_artist/', views.createartist),
     path('create_artist1/', views.createartist1),
     path('login_artist/', views.loginartist),
+    path('login1/',views.login1),
+    path('artistHome/',views.artistHome),
+    path('guestHome/',views.guestHome),
+    path('adminHome/',views.adminHome),
+    
     path('guest_login/', views.guestlogin),
     path('addguest/', views.addguest, name='addguest'),
     
