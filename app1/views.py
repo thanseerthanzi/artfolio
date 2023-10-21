@@ -55,10 +55,10 @@ def createartist1(request):
     p1.first_name = request.POST.get('fname')
     p1.last_name = request.POST.get('lname')
     p1.email = request.POST.get('email')
-    password = request.POST.get('password')
+    password = request.POST.get('pass')
     p1.set_password(password)
 
-    # p3.userid=request.POST.get('userid')
+    p3.userid=request.POST.get('uname')
     p3.status="artist" #"guest" in guest form
     p1.save()
     p.save()
@@ -85,13 +85,13 @@ def login1(request):
     user=authenticate(username=username,password=password)
     request.session['username']=username
     if user is not None and user.is_superuser==1:
-        return redirect('adminHome')
+        return redirect('/adminHome/')
     elif user is not None and user.is_superuser==0:
-        u1=accounts.objects.get(username=user)
+        u1=accounts.objects.get(userid=user)
         if u1.status=="guest":
-          return redirect('guestHome')  
+          return redirect('/guestHome/')  
         elif u1.status=="artist":
-            return redirect('artistHome')
+            return redirect('/artistHome/')
         else:
             pass
     else:
