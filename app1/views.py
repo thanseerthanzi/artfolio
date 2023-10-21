@@ -3,7 +3,9 @@ from app1.models import accounts, artist_tbl
 from django.contrib.auth.models import User
 from django.contrib.auth import authenticate
 from django.core.files.storage import FileSystemStorage
+from django.http import HttpResponse
 
+ 
 # Create your views here.
 def index(request):
     return render(request, 'index.html')
@@ -72,7 +74,32 @@ def createguest2(request):
     p3.status="guest"
 
     p1.username = request.POST.get('uname')
-    p1.set_password("guest")
+   
+    p1.set_password(p1.username)
     p3.save()
     p1.save()
     return render(request, "guest_login.html")
+def login1(request):
+    username=request.POST.get('uname')
+    password=request.POST.get('pass')
+    user=authenticate(username=username,password=password)
+    request.session['username']=username
+    if user is not None and user.is_superuser==1:
+        return redirect('adminHome')
+    elif user is not None and user.is_superuser==0:
+        u1=accounts.objects.get(username=user)
+        if u1.status=="guest":
+          return redirect('guestHome')  
+        elif u1.status=="artist":
+            return redirect('artistHome')
+        else:
+            pass
+    else:
+        return HttpResponse("Inavalid user !! 404") 
+def adminHome(request):
+    return render(request, "admin.html")
+def guestHome(request):
+    return render(request, "guestHome.html")
+def artistHome(request):
+    return render(request, "artistHome.html")
+
