@@ -76,11 +76,11 @@
               <div class="guest-content">
                   <div class="guest-form">
                       <h2 class="form-title">Enter Guest id</h2>
-                      <form method="post" action="addguest" class="register-form" id="login-form" >
+                      <form method="post" action="/addguest/" class="register-form" id="login-form" >
                         {% csrf_token %}
                           <div class="form-group">
                               <label for="your_name"><i class="zmdi zmdi-account material-icons-name"></i></label>
-                              <input type="text" name="your_name" id="your_name" placeholder="type your id"/>
+                              <input type="text" name="userid" id="userid" placeholder="type your id"/>
                           </div>
 
                           </div>

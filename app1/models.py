@@ -8,15 +8,17 @@ class accounts(models.Model):
         db_table = 'accounts' 
     
 class artist_tbl(models.Model):
-    uname = models.CharField(max_length=200)
     fname = models.CharField(max_length=200)
     lname = models.CharField(max_length=200)
+    dob = models.CharField(max_length=100)
     gender = models.CharField(max_length=100)
-    email = models.EmailField()
-    phone = models.BigIntegerField()
-    ads = models.CharField(max_length=400)
     photo=models.CharField(max_length=400)
+    state = models.CharField(max_length=100)
     district = models.CharField(max_length=100)
+    phone = models.BigIntegerField()
+    uname = models.CharField(max_length=100)
+    email = models.EmailField()
+    pasword = models.CharField(max_length=100)
     class Meta:
         db_table = 'artist_tbl'
     
