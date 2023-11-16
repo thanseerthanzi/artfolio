@@ -103,3 +103,5 @@ def guestHome(request):
 def artistHome(request):
     return render(request, "artistHome.html")
 
+def addart(request):
+    return render(request, "addart.html")

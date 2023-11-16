@@ -52,12 +52,11 @@
 
     <nav id="navbar" class="navbar">
       <ul>
-        <li><a class="nav-link scrollto" href="#home">Home</a></li>
+        <li><a class="nav-link scrollto" href="{% url 'index' %}">Home</a></li>
         <li><a class="nav-link scrollto active" href="#guest">Guest</a></li>
+        <li><a class="nav-link scrollto" href="{% url 'login_artist' %}">Login</a></li>
+        <li><a class="nav-link scrollto" href="{% url 'signup' %}">Signup</a></li>
         <li><a class="nav-link scrollto" href="#about">About</a></li>
-        <li><a class="nav-link scrollto" href="#resume">Resume</a></li>
-        <li><a class="nav-link scrollto" href="#services">Services</a></li>
-        <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
         </li>
       </ul>
       <i class="bi bi-list mobile-nav-toggle"></i>
@@ -89,7 +88,6 @@
                               <input type="submit" name="signin" id="signin" class="form-submit" value="Enter"/>
                          
                         </form>
-                       
                           <span class="social-label">Or login with</span>
                           <ul class="socials">
                               <li><a href="#"><i class="display-flex-center zmdi zmdi-facebook"></i></a></li>

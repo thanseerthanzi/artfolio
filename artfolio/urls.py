@@ -24,17 +24,18 @@ from django.conf import settings
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.index),
+    path('index/', views.index,name='index'),
     path('admin1/', views.admin1),
     path('artist_profile/', views.artistprofile),
-    path('create_artist/', views.createartist),
+    path('create_artist/', views.createartist,name='signup'),
     path('create_artist1/', views.createartist1),
-    path('login_artist/', views.loginartist),
+    path('login_artist/', views.loginartist,name='login_artist'),
     path('login1/',views.login1),
     path('artistHome/',views.artistHome),
     path('guestHome/',views.guestHome),
     path('adminHome/',views.adminHome),
-    
-    path('guest_login/', views.guestlogin),
+    path('addart/',views.addart),
+    path('guest_login/', views.guestlogin,name='guest'),
     path('addguest/', views.addguest, name='addguest'),
     
 ]
